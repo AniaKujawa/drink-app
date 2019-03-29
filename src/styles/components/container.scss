@@ -6,3 +6,9 @@ $main-block-color: rgb(230, 234, 236);
     background-color: $main-block-color;
 }
 
+@media only screen and (max-width: 600px) {
+    .container{
+        margin: 20px;
+    }
+}
+
