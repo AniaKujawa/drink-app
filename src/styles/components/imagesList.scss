@@ -1,0 +1,67 @@
+@mixin custom-scroll-bar() {
+   
+    &::-webkit-scrollbar
+    {
+        width: 5px;
+    }
+    
+     &::-webkit-scrollbar-thumb
+    {
+        background-color: rgb(162, 189, 202);
+        
+    }
+    }
+  
+.images-list {
+    overflow-y: scroll;
+    @include custom-scroll-bar();
+    max-height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    margin-left:50px;
+    justify-content: space-around;
+    padding-bottom: 50px;
+
+
+&__img {
+    height: 280px;
+    width:280px;
+}
+
+&__imgholder {
+    height: 280px;
+    width:280px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+
+        box-shadow: 10px 15px 33px -12px rgba(0,0,0,0.75);
+
+        :hover{
+            border: 5px solid rgb(252, 211, 196);
+            transition: ease-in-out 0.2s;
+        }
+}
+
+&__textholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .images-list {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-height: 900px) {
+    .images-list {
+        max-height: 500px;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Drinks app</title>
+        <meta name="description" content= "Drinks app." />
+        <meta name="keywords" content="drinks, gallery" />
+        <meta http-equiv="X-UA-Compatible"content="IE=edge, chrome=1" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+    <body>
+                <div class="logo">d'inks</div>
+                <div class="container">
+                        <nav class="main-nav">
+                                <a href="#" class="main-nav__link">Beer</a>
+                                <a href="#" class="main-nav__link">Coffee/Tea</a>
+                                <a href="#" class="main-nav__link--active">Cocktail</a>
+                                <a href="#" class="main-nav__link">Cocoa</a>
+                                <a href="#" class="main-nav__link">Milk/Float/Shake</a>
+                                <a href="#" class="main-nav__link">Shot</a>
+                                <a href="#" class="main-nav__link">Punch/Party Drink</a>
+                                <a href="#" class="main-nav__link">Homemade Liqueur</a>
+                             </nav>
+                             <div class="images-list">
+                                    <div class="images-list__imgholder">
+                                            <img class="images-list__img" src=<%= require("./styles/assets/bijou.jpg") %> />
+                                            <div class="images-list__textholder">Bijou</div>
+                                        </div>
+                                        <div class="images-list__imgholder images-list__img--active">
+                                            <img class="images-list__img" src=<%= require("./styles/assets/negroni.jpg") %> />
+                                            <div class="images-list__textholder">Negroni</div>
+                                        </div>
+                                        <div class="images-list__imgholder">
+                                            <img class="images-list__img" src=<%= require("./styles/assets/mojito.jpg") %>/>
+                                            <div class="images-list__textholder">Mojito</div>
+                                         </div>
+                                        <div class="images-list__imgholder">
+                                            <img class="images-list__img" src=<%= require("./styles/assets/rattlesnake.jpg") %> />
+                                            <div class="images-list__textholder">Texas Rattlesnake</div>
+                                        </div>
+                                        <div class="images-list__imgholder">
+                                            <img class="images-list__img" src=<%= require("./styles/assets/eggnogg.jpg") %> />
+                                            <div class="images-list__textholder">Egg Nogg</div>
+                                        </div>
+                                        <div class="images-list__imgholder">
+                                            <img class="images-list__img" src=<%= require("./styles/assets/zinger.jpg") %> />
+                                            <div class="images-list__textholder">Zinger</div>
+                                        </div>   
+                             </div>        
+                </div>
+                <footer class="contact">
+                    <div class="contact__info">
+                        <h3 class="contact__welcome">Say hello! -</h3>
+                        <h3 class="contact__mail">hi@dinks.com</h3>
+                    </div>
+                    <div class="contact__social-media">
+                        <h3 class="contact__follow">Follow us</h3>
+                        <a href="#" class="contact__social-links"><i class="fas fa-basketball-ball"></i></a>
+                        <a href="#" class="contact__social-links"><i class="fab fa-instagram "></i></a>
+                        <a href="#" class="contact__social-links"><i class="fab fa-facebook "></i></a>
+                    </div>
+                </footer> 
+    </body>
+</html>

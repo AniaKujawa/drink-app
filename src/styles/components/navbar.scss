@@ -1,0 +1,36 @@
+.main-nav {
+    display:flex;
+    padding-top: 50px;
+    margin-left:50px;
+    margin-right: 50px;
+    padding-bottom:15px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+     
+    &__link {
+        text-decoration: none;
+        color: rgb(162, 189, 202);
+        
+        &--active {
+            color: rgb(37, 58, 59);
+        }
+        }      
+}
+
+a:hover {
+
+    color: rgb(91, 114, 124);
+    text-decoration: underline;
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        .main-nav {
+            flex-direction: column;
+            align-items: center;
+            
+            &__link {
+                margin: 5px;
+            }
+        }
+    }
