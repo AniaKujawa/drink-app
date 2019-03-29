@@ -65,6 +65,7 @@ module.exports = {
       hash: true,
       filename: 'index.html',
       template: './src/index.html',
+      meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'}
     }),
     new MiniCSSExtractPlugin(),
   ]
